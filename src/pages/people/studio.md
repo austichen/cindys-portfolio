@@ -1,7 +1,7 @@
 ---
 templateKey: "gallery-page"
 title: "Studio"
-previewImage: /img/46899964521_746454d43b_o.jpg
+previewImage: /img/46899967401_983d44836b_o.jpg
 images:
   - image: /img/45986789445_8bd286b8ca_o.jpg
   - image: /img/46848823002_ac44b059bd_o.jpg
