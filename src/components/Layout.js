@@ -1,15 +1,17 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
+      <SimpleReactLightbox>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -40,17 +42,18 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
+          content={`${withPrefix('/')}img/profile.jpg`}
         />
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <Footer />
+      </SimpleReactLightbox>
     </div>
   )
 }

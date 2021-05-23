@@ -4,9 +4,12 @@
   "version": "1.1.3",
   "author": "Austin Green",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.3",
+    "@splidejs/react-splide": "^0.4.4",
     "bulma": "^0.9.0",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-netlify": "^2.2.4",
     "gatsby-plugin-netlify-cms": "^4.2.5",
     "gatsby-plugin-purgecss": "^5.0.0",
@@ -29,6 +32,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
+    "simple-react-lightbox": "^3.6.6",
     "uuid": "^7.0.0"
   },
   "keywords": [
