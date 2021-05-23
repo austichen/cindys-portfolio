@@ -1,6 +1,6 @@
 ---
-templateKey: 'gallery-page'
-title: 'Home'
+templateKey: "gallery-page"
+title: "Home"
 previewImage: /img/jumbotron.jpg
 images:
   - image: /img/2+copy.jpg

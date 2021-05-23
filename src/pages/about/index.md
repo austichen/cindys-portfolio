@@ -1,9 +1,10 @@
 ---
-templateKey: 'about-page'
+templateKey: "about-page"
 path: /about
 title: About
 image: /img/profile.jpg
 ---
+
 Hi, my name is Cindy.
 
 I'm a medical student at the University of Toronto.

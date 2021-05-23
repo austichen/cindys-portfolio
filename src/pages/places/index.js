@@ -1,13 +1,18 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import GalleryPreview from '../../components/GalleryPreview'
-import Layout from '../../components/Layout'
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import GalleryPreview from "../../components/GalleryPreview";
+import Layout from "../../components/Layout";
 
 export default () => (
   <StaticQuery
     query={graphql`
       query PlacesPageQuery {
-        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages/places/"}, frontmatter: {templateKey: {eq: "gallery-page"}}}) {
+        allMarkdownRemark(
+          filter: {
+            fileAbsolutePath: { regex: "/pages/places/" }
+            frontmatter: { templateKey: { eq: "gallery-page" } }
+          }
+        ) {
           edges {
             node {
               excerpt(pruneLength: 400)
@@ -28,8 +33,12 @@ export default () => (
             }
           }
         }
-      }      
+      }
     `}
-    render={(data, count) => <Layout><GalleryPreview data={data} count={count} /></Layout>}
+    render={(data, count) => (
+      <Layout>
+        <GalleryPreview data={data} count={count} />
+      </Layout>
+    )}
   />
-)
+);

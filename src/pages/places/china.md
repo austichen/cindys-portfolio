@@ -1,6 +1,6 @@
 ---
-templateKey: 'gallery-page'
-title: 'China: Backpacking'
+templateKey: "gallery-page"
+title: "China: Backpacking"
 previewImage: /img/JPEG+image-1CD1E808DF15-9.jpeg
 images:
   - image: /img/JPEG+image-1CD1E808DF15-2.jpeg
