@@ -15,7 +15,6 @@ export const GalleryPageTemplate = ({ images }) => {
 };
 
 GalleryPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   ),

@@ -5,12 +5,7 @@ import { GalleryPageTemplate } from "../../templates/gallery-page";
 const GalleryPagePreview = ({ entry }) => {
   const entryImages = entry.getIn(["data", "images"]);
   const images = entryImages ? entryImages.toJS() : [];
-  return (
-    <GalleryPageTemplate
-      images={images}
-      title={entry.getIn(["data", "title"])}
-    />
-  );
+  return <GalleryPageTemplate images={images} />;
 };
 
 GalleryPagePreview.propTypes = {
