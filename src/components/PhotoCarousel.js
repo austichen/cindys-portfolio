@@ -4,9 +4,9 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { SRLWrapper } from "simple-react-lightbox";
 
 const PhotoCarousel = ({ images }) => {
+  const [loadedImages, setLoadedImages] = useState({});
   if (typeof window === "undefined") return <p>Server render</p>;
 
-  const [loadedImages, setLoadedImages] = useState({});
   const updateLoadedImages = (i) => {
     setLoadedImages({ ...loadedImages, [i]: true });
   };
